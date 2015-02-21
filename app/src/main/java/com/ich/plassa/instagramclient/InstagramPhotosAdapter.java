@@ -35,9 +35,11 @@ public class InstagramPhotosAdapter extends ArrayAdapter<InstagramPhoto> {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.item_photo, parent, false);
         }
         // Lookup the views for populating the data (image, caption)
+        TextView tvUser = (TextView) convertView.findViewById(R.id.tvUser);
         TextView tvCaption = (TextView) convertView.findViewById(R.id.tvCaption);
         ImageView ivPhoto = (ImageView) convertView.findViewById(R.id.ivPhoto);
         // Insert the model data into each of the view items
+        tvUser.setText(photo.username);
         tvCaption.setText(photo.caption);
         // Clear out the imageview if it was recycled (right away)
         ivPhoto.setImageResource(0);

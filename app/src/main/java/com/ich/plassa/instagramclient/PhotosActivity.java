@@ -47,7 +47,6 @@ public class PhotosActivity extends ActionBarActivity {
         - Client ID:  011257f1560044de94e4c167ad9f389d
         - Popular:  https://api.instagram.com/v1/media/popular?access_token=ACCESS-TOKEN
         - Response
-
         */
 
         String url = "https://api.instagram.com/v1/media/popular?client_id=" + CLIENT_ID;
